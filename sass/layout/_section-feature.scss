@@ -1,0 +1,32 @@
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc(100% / 4 - 30px);
+}
+
+.feature-card {
+    width: 270px;
+ 
+    &:not(:last-child) {
+    margin-right: 30px;
+}
+    &__icon {
+    @extend %align;
+    height: 120px;
+    margin-bottom: 30px;
+       
+    background-color: #F5F4FA;  
+}    
+    &__title {
+    @include font (14px, 700, 1.14,  0.03em);
+    color: var(--title-text-color);
+        
+    margin-top: 0;
+    margin-bottom: 0;
+} 
+    &__text {
+    margin-top: 10px;
+    margin-bottom: 0;
+   } 
+}   
+

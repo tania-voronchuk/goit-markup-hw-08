@@ -1,0 +1,27 @@
+address {
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.address-list  {
+    margin-top: 9px;
+
+    &__map {
+    @include font (14px, 400, 1.7, 0.03em);
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+    &__link {
+    color: rgba(255, 255, 255, 0.6);
+   }
+}
+
+.footer__title {
+    @include font (14px, 700, 1.14, 0.03em);
+    color: var(--primery-background-color);
+
+    margin-bottom: 20px;
+    padding-left: 0;
+    margin-top: 0;
+} 
+

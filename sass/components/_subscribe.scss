@@ -1,0 +1,44 @@
+.footer-subscribe {
+    display: flex;
+
+    margin-left: 93px;
+    padding-top: 12px;
+
+    &__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    @include size-radius (200px, 50px, 4px);
+
+    @include font (16px, 700, 1.87, 0.06em);
+    color: var(--primery-background-color);
+
+    padding: 0;
+
+    border: none;
+    background-color: var(--accent-color);
+
+    cursor: pointer;
+}
+    &__icon--send {
+    fill: var(--primery-background-color);
+    margin-left: 10px;
+   }
+}   
+
+.footer-subscribe__input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: var(--secondary-background-color);
+    
+    @include size-radius (358px, 50px, 4px);
+    padding-left: 16px;
+    margin-top: 20px;
+    margin-right: 10px;
+
+    &::placeholder  {
+    @include font (16px, 400, 1.25, 0.03em); 
+    color: rgba(255, 255, 255, 0.6);
+   }
+}   
+
+
