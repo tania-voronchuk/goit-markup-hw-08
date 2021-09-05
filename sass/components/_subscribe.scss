@@ -1,8 +1,42 @@
-.footer-subscribe {
-    display: flex;
+@media screen and (min-width: 480px) {
+    .footer-subscribe {
+        text-align: center;
+    }
+    .footer-subscribe__input {
+        @include size-radius (450px, 50px, 4px);
+        margin-bottom: 20px;   
+    } 
+}  
 
-    margin-left: 93px;
-    padding-top: 12px;
+@media screen and (min-width: 768px) {
+    .footer-subscribe {
+        display: block;
+    } 
+    .footer-subscribe__input {
+        display: flex;
+        }
+} 
+
+@media screen and (min-width: 1200px) {
+    .footer-subscribe {
+     display: flex;
+     padding-top: 12px;
+     text-align: start;
+    }
+    .footer-subscribe__input {
+       @include size-radius (358px, 50px, 4px);
+       display: flex;
+       margin-right: 10px;
+       margin-bottom: 0;
+    }
+} 
+
+
+.footer-subscribe {
+//    display: flex;
+
+//   margin-left: 93px;
+//    padding-top: 12px;
 
     &__button {
     display: inline-flex;
@@ -30,7 +64,7 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: var(--secondary-background-color);
     
-    @include size-radius (358px, 50px, 4px);
+//    @include size-radius (358px, 50px, 4px);
     padding-left: 16px;
     margin-top: 20px;
     margin-right: 10px;

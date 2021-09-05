@@ -1,12 +1,16 @@
-
-.nav {
-    display: flex;
-
-    &__item:not(:last-child) {
-    margin-right: 50px;
-    }
+.nav .list{
+    display: none;
 }
-.nav__link{
+
+@media screen and (min-width: 768px) {
+    .nav .list {
+    display: inline-flex;
+    margin-left: 88px;
+}
+    .nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+    .nav__link{
     @include font (14px, 500, 1.14, 0.02em); 
     color: var(--title-text-color); 
 
@@ -41,4 +45,5 @@
 
 .nav__item--active .nav__link {
     color: var(--accent-color);
+  }
 }

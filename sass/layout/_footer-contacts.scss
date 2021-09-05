@@ -1,3 +1,30 @@
+@media screen and (min-width: 480px) {
+    .footer-address-card {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer-address-card {
+        margin-right: 204px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-address-card {
+        text-align: start;
+ 
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-address-card {
+        margin-right: 70px;
+    }
+}
+
+
 address {
     font-style: normal;
     margin-top: 20px;
@@ -24,4 +51,6 @@ address {
     padding-left: 0;
     margin-top: 0;
 } 
+
+
 

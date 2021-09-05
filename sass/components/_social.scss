@@ -1,11 +1,31 @@
-.footer-social {
-    padding-top: 12px;
-    margin-left: 70px;
+@media screen and (min-width: 480px) {
+    .footer-social {
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 60px;
+    }
+    .footer-social__card {
+        justify-content: center;
+    }
 }
 
+@media screen and (min-width: 1200px) {
+    .footer-social {
+        text-align: start;
+        margin-right: 93px;
+        padding-top: 12px;
+    }
+}
+
+
+//.footer-social {
+//    padding-top: 12px;
+//    margin-left: 70px;
+//}
+
 .footer-social__card {
-    display: flex;
-    margin-right: -10px;
+   display: flex;
+//    margin-right: -10px;
     padding: 0;
 }
 

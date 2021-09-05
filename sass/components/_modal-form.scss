@@ -141,3 +141,11 @@ textarea {
     }
 }
 
+@media screen and (max-width: 1199px) {
+    .form-card__policy {
+        @include font (12px, 400, 1.16, 0.03em);    
+    }
+    .form-card__link {
+        @include font (12px, 400, 1.16, 0.03em);  
+   }
+}
