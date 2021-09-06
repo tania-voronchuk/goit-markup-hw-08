@@ -17,16 +17,9 @@
     }
 }
 
-
-//.footer-social {
-//    padding-top: 12px;
-//    margin-left: 70px;
-//}
-
 .footer-social__card {
    display: flex;
-//    margin-right: -10px;
-    padding: 0;
+   padding: 0;
 }
 
 .footer-social__card-icon {
@@ -34,7 +27,7 @@
     height: 44px;
 
     &:not(:last-child) {
-    margin-right: 10px;
+      margin-right: 10px;
     }
 }
 
@@ -52,6 +45,6 @@
 
     &:hover, 
     &:focus {
-    background-color: var(--accent-color);
+      background-color: var(--accent-color);
     }
 }

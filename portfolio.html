@@ -35,17 +35,17 @@
                   <use href="./images/sprite.svg#smartphone"></use>  
                   </svg>+38 096 111 11 11</a></li>
               </ul> 
-              <button type=button class="mobile-menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                <svg class="mobile-menu-btn__icon" width="40px" height="40px"
-                aria-label="Переключатель мобильного меню">
-                    <use class="mobile-menu-btn__icon-burger" href="./images/sprite1.svg#icon-menu_40px"></use> 
-                    <use class="mobile-menu__icon-close" href="./images/sprite1.svg#icon-close-black"></use>   
-                </svg>
+              <button type=button class="mobile-menu-btn" data-menu-open>
+                <svg class="mobile-menu-btn__icon" width="40px" height="40px">
+                    <use class="mobile-menu-btn__icon-burger" href="./images/sprite1.svg#icon-menu_40px"></use>    
+                </svg></button>
     </div>
         </div> 
     <!--Мобильное меню--> 
-       <div class="mobile-menu" data-menu>
-            <div class="container mobile-menu__container">
+    <div class="mobile-menu" data-menu>
+        <button class="close-btn" data-menu-close><svg class="mobile-menu-btn__icon" width="40px" height="40px">
+            <use class="mobile-menu__icon-close" href="./images/sprite1.svg#icon-close-black"></use></svg></button>
+        <div class="container mobile-menu__container">
             <ul class="mobile-menu__nav-list">
                 <li class="mobile-menu__nav-item"><a href="" class=mobile-menu__link>Студия</a></li>
                 <li class="mobile-menu__nav-item"><a href="./portfolio.html" class=mobile-menu__link>Портфолио</a></li>
@@ -101,7 +101,7 @@
                     </div></div>
                 <div class="portfolio-card">
                     <h3 class="portfolio-card__title">Технокряк</h3>
-                    <p class="portfolio-list__description-text">Веб-сайт</p>
+                    <p class="portfolio-card__text">Веб-сайт</p>
                 </div>
                 </li>
                 <li class="portfolio-list__item">

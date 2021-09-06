@@ -403,7 +403,6 @@ h2 {
     width: 358px;
     height: 50px;
     border-radius: 4px;
-    display: flex;
     margin-right: 10px;
     margin-bottom: 0;
   }
@@ -510,6 +509,13 @@ h2 {
   }
 }
 
+.close-btn {
+  background-color: transparent;
+  border: none;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
 .mobile-menu-btn__icon-burger:focus {
   fill: var(--accent-color);
 }
@@ -540,7 +546,7 @@ h2 {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-menu.is-open {
+.mobile-menu .is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -550,6 +556,7 @@ h2 {
   position: relative;
   padding-top: 48px;
   padding-left: 40px;
+  margin: 0;
 }
 
 .mobile-menu__icon-close:focus,
@@ -692,9 +699,6 @@ h2 {
     line-height: 1.16;
     letter-spacing: 0.02em;
   }
-}
-
-@media screen and (min-width: 768px) {
   .auth-nav__item:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -772,7 +776,6 @@ h2 {
   .hero-section {
     padding-top: 118px;
     padding-bottom: 118px;
-    min-width: 480px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header-mob-img.jpg");
   }
 }
@@ -787,9 +790,6 @@ h2 {
   .hero-container {
     width: 400px;
   }
-}
-
-@media screen and (min-width: 480px) {
   .hero-container__title {
     font-size: 26px;
     font-weight: 900;
@@ -884,14 +884,6 @@ h2 {
   }
   .feature-card {
     flex-basis: calc(100% / 2 - 30px);
-  }
-  .feature-card {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .feature-card {
     margin-bottom: 30px;
   }
   .feature-card:not(:nth-child(2n)) {
@@ -1207,7 +1199,7 @@ h2 {
   .portfolio-list {
     width: 1200px;
   }
-  .portfolio-list__item {
+  __item {
     flex-basis: calc(100% / 3 - 30px);
   }
 }

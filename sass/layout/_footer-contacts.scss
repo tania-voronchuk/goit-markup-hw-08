@@ -14,7 +14,6 @@
 @media screen and (min-width: 1200px) {
     .footer-address-card {
         text-align: start;
- 
     }
 }
 
@@ -23,7 +22,6 @@
         margin-right: 70px;
     }
 }
-
 
 address {
     font-style: normal;
@@ -34,12 +32,12 @@ address {
     margin-top: 9px;
 
     &__map {
-    @include font (14px, 400, 1.7, 0.03em);
-    color: #FFFFFF;
-    font-family: 'Roboto', sans-serif;
-}
+      @include font (14px, 400, 1.7, 0.03em);
+      color: #FFFFFF;
+      font-family: 'Roboto', sans-serif;
+  }
     &__link {
-    color: rgba(255, 255, 255, 0.6);
+      color: rgba(255, 255, 255, 0.6);
    }
 }
 
