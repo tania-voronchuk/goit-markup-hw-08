@@ -10,26 +10,26 @@
 }  
 
 @media screen and (min-width: 768px) {
-    .footer-subscribe {
-        display: block;
-
-      &__input {
+      .footer-subscribe__input {
         display: flex;
         }
     } 
-} 
 
 @media screen and (min-width: 1200px) {
-    .footer-subscribe {
+    form {
      display: flex;
+     align-items: flex-end;
+  }    
+    .footer-subscribe {
      padding-top: 12px;
-     text-align: start;  
-}
-    .footer-subscribe__input {       
+     text-align: start; 
+     margin-bottom: 0; 
+ }
+    .footer-subscribe__input {      
        @include size-radius (358px, 50px, 4px);
        margin-right: 10px;
        margin-bottom: 0;
-    }
+    } 
 } 
 
 .footer-subscribe {

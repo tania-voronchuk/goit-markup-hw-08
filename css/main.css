@@ -385,19 +385,20 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
-  .footer-subscribe {
-    display: block;
-  }
   .footer-subscribe__input {
     display: flex;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .footer-subscribe {
+  form {
     display: flex;
+    align-items: flex-end;
+  }
+  .footer-subscribe {
     padding-top: 12px;
     text-align: start;
+    margin-bottom: 0;
   }
   .footer-subscribe__input {
     width: 358px;
@@ -469,6 +470,7 @@ h2 {
 .footer-social__card {
   display: flex;
   padding: 0;
+  margin-top: 20px;
 }
 
 .footer-social__card-icon {
@@ -1339,11 +1341,6 @@ h2 {
 @media screen and (min-width: 1200px) {
   .footer-address-card {
     text-align: start;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer-address-card {
     margin-right: 70px;
   }
 }
@@ -1376,8 +1373,8 @@ address {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--primery-background-color);
-  margin-bottom: 20px;
   padding-left: 0;
   margin-top: 0;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */
